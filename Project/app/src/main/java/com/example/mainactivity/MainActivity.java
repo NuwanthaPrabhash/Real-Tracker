@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Toast.makeText(MainActivity.this, "Firebase Connection is Success", Toast.LENGTH_LONG).show();
+
         farmarButton = (Button) findViewById(R.id.farmarButton);
         customerButton = (Button) findViewById(R.id.customerButton);
 
