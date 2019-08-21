@@ -25,8 +25,14 @@ public class LoginAndSignIn extends AppCompatActivity {
         logIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent logInIntent = new Intent(LoginAndSignIn.this, EnterProductDetails.class);
-                startActivity(logInIntent);
+
+                String username= "nuwantha";      // set user name and password from the database here
+                String password = "123";
+                if(username.equals(userNameEdit.getText().toString()) && password.equals(passwordEdit.getText().toString())){
+                    Intent logInIntent = new Intent(LoginAndSignIn.this, EnterProductDetails.class);
+                    startActivity(logInIntent);
+                }
+
             }
         });
 

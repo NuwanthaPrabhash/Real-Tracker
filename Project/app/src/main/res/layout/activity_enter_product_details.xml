@@ -4,12 +4,161 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EnterProductDetails">
+    tools:context=".EnterProductDetails"
+    android:background="@drawable/logo">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="30dp">
 
-        
+        <!--product name-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/productNameLable"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:text="Product Name"/>
+
+            <EditText
+                android:id="@+id/productNameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!--temperature-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/temperatureLable"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:text="Temperature" />
+
+            <EditText
+                android:id="@+id/temperatureEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!--humidity-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/humidityLable"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:text="Humidity"/>
+
+            <EditText
+                android:id="@+id/humidityEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!--fertilizer-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/fertilizerLable"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:text="Fertilizer"/>
+
+            <EditText
+                android:id="@+id/fertilizerEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!--farm name-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/farmNameLable"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:text="Farm NAme"/>
+
+            <EditText
+                android:id="@+id/farmNameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!--transport media-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/transportMediaLable"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:text="Transport Media"/>
+
+            <EditText
+                android:id="@+id/transportMediaEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!--weeding type-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/weedingTypeLable"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:text="Weeding Type"/>
+
+            <EditText
+                android:id="@+id/weedingTypeEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"/>
+        </LinearLayout>
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

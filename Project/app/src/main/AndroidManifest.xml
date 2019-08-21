@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EnterProductDetails"></activity>
+
+        <activity android:name=".EnterProductDetails" />
         <activity android:name=".CustomerScanner" />
         <activity android:name=".LoginAndSignIn" />
         <activity android:name=".FarmarProfileCreation" />
