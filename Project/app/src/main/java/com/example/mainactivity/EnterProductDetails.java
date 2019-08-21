@@ -9,5 +9,6 @@ public class EnterProductDetails extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_enter_product_details);
+        ///llllll
     }
 }
