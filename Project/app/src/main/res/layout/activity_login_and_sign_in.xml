@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginAndSignIn"
-    android:background="@drawable/logo">
+    android:background="@drawable/logo"
+    tools:context=".controllers.LoginAndSignIn">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -73,8 +73,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="right">
+            android:gravity="right"
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/logIn"

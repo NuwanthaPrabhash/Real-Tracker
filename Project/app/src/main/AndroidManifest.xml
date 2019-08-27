@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mainactivity">
 
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,12 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".EnterProductDetails" />
-        <activity android:name=".CustomerScanner" />
-        <activity android:name=".LoginAndSignIn" />
-        <activity android:name=".FarmarProfileCreation" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".controllers.EnterProductDetails" />
+        <activity android:name=".controllers.CustomerScanner" />
+        <activity android:name=".controllers.LoginAndSignIn" />
+        <activity android:name=".controllers.FarmarProfileCreation" />
+        <activity android:name=".controllers.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

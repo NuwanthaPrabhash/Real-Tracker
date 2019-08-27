@@ -1,16 +1,15 @@
-package com.example.mainactivity;
+package com.example.mainactivity.controllers;
 
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.example.mainactivity.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -86,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
                         MainActivity.super.onBackPressed();
                     }
                 })
-                .setNegativeButton("cancle",null).setCancelable(false); // setCancelable() use to not cancel the alert box when
+                .setNegativeButton("cancle", null).setCancelable(false); // setCancelable() use to not cancel the alert box when
         //clicked other areas
 
         AlertDialog alertDialog = builder.create();
