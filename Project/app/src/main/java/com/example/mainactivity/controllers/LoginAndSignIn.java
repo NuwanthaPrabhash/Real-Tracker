@@ -1,4 +1,4 @@
-package com.example.mainactivity;
+package com.example.mainactivity.controllers;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.example.mainactivity.R;
 
 public class LoginAndSignIn extends AppCompatActivity {
 
@@ -26,9 +28,9 @@ public class LoginAndSignIn extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String username= "nuwantha";      // set user name and password from the database here
+                String username = "nuwantha";      // set user name and password from the database here
                 String password = "123";
-                if(username.equals(userNameEdit.getText().toString()) && password.equals(passwordEdit.getText().toString())){
+                if (username.equals(userNameEdit.getText().toString()) && password.equals(passwordEdit.getText().toString())) {
                     Intent logInIntent = new Intent(LoginAndSignIn.this, EnterProductDetails.class);
                     startActivity(logInIntent);
                 }
