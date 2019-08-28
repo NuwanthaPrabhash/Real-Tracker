@@ -37,7 +37,7 @@
                 android:id="@+id/userNameLable"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="User Name"
+                android:text="@string/user_name"
                 tools:ignore="MissingConstraints" />
 
             <EditText
@@ -58,7 +58,7 @@
                 android:id="@+id/passwordLable"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Password"
+                android:text="@string/password"
                 tools:ignore="MissingConstraints" />
 
             <EditText
@@ -80,13 +80,13 @@
                 android:id="@+id/logIn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Log In" />
+                android:text="@string/log_in" />
 
             <Button
                 android:id="@+id/signIn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sign In" />
+                android:text="@string/sign_in" />
         </LinearLayout>
     </LinearLayout>
 

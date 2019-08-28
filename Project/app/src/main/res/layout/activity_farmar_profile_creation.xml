@@ -23,12 +23,13 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/firstNameLable"
                 android:layout_width="122dp"
                 android:layout_height="wrap_content"
-                android:text="First Name" />
+                android:text="@string/first_name" />
 
             <EditText
-                android:id="@+id/firstName"
+                android:id="@+id/firstNameEdit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter First Name" />
@@ -41,12 +42,13 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/secoundNameLable"
                 android:layout_width="122dp"
                 android:layout_height="wrap_content"
-                android:text="Secound Name" />
+                android:text="@string/secound_name" />
 
             <EditText
-                android:id="@+id/SecoundName"
+                android:id="@+id/secoundNameEdit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter Secound Name" />
@@ -60,12 +62,13 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/emailLable"
                 android:layout_width="122dp"
                 android:layout_height="wrap_content"
-                android:text="Email" />
+                android:text="@string/email" />
 
             <EditText
-                android:id="@+id/email"
+                android:id="@+id/emailEdit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter Email Address"
@@ -80,16 +83,55 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/contactNumberLable"
                 android:layout_width="122dp"
                 android:layout_height="wrap_content"
-                android:text="Contact Number" />
+                android:text="@string/contact_number" />
 
             <EditText
-                android:id="@+id/contactNumber"
+                android:id="@+id/contactNumberEdit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter Contact Number"
                 android:inputType="number" />
+        </LinearLayout>
+
+        <!--create username-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/createUsernameLable"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:text="@string/createUsername" />
+
+            <EditText
+                android:id="@+id/createUsernameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Username" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/createPasswordLable"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:text="@string/createPasswor" />
+
+            <EditText
+                android:id="@+id/createPasswordEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Password"
+                android:inputType="numberPassword" />
         </LinearLayout>
 
         <LinearLayout
@@ -98,17 +140,11 @@
             android:gravity="right"
             android:orientation="horizontal">
 
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="save ekak liyanna" />
-
             <Button
                 android:id="@+id/saveFarmarProfileCreation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Submit" />
+                android:text="submit" />
 
         </LinearLayout>
 

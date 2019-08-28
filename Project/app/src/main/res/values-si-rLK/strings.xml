@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Real Tracker</string>
+
+    <string name="farmer" translatable="false">ගොවියා</string>
+    <string name="customer" translatable="false">පාරිභෝගික</string>
+    <string name="change_language" translatable="false">භාෂාව වෙනස් කරන්න</string>
+
+    <!--login and sign-->
+    <string name="user_name" translatable="false">පරිශීලක නාමය</string>
+    <string name="password" translatable="false">රහස් පදය</string>
+    <string name="log_in" translatable="false">ඇතුල් වන්න</string>
+    <string name="sign_in" translatable="false">පුරන්න</string>
+
+    <!--farmer profile creation-->
+    <string name="first_name" translatable="false">මුල් නම</string>
+    <string name="secound_name" translatable="false">දෙවන නම</string>
+    <string name="email" translatable="false">විද්යුත් තැපෑල</string>
+    <string name="contact_number" translatable="false">ඇමතුම් අංකය</string>
+    <string name="submit" translatable="false">ඉදිරිපත් කරන්න</string>
+    <string name="createUsername" translatable="false">පරිශීලක නාමය සාදන්න</string>
+    <string name="createPassword" translatable="false">මුරපදය සාදන්න</string>
+
+
+    <!--product details-->
+    <string name="product_name" translatable="false">නිෂ්පාදන නාමය</string>
+    <string name="temperature" translatable="false">උෂ්ණත්වය</string>
+    <string name="humidity" translatable="false">ආර්ද්‍රතාවය</string>
+    <string name="fertilizer" translatable="false">පොහොර</string>
+    <string name="farm_name" translatable="false">ගොවිපල නම</string>
+    <string name="transport_media" translatable="false">ප්‍රවාහන මාධ්‍ය</string>
+    <string name="weeding_type" translatable="false">වල් නෙලීමේ වර්ගය</string>
+
+
+</resources>

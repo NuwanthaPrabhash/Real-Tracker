@@ -1,4 +1,36 @@
 <resources>
     <string name="app_name" translatable="false">mainActivity</string>
 
+    <string name="farmer" translatable="false">Farmer</string>
+    <string name="customer" translatable="false">Customer</string>
+    <string name="change_language" translatable="false">Change Language</string>
+
+    <!--login and sign-->
+    <string name="user_name" translatable="false">User Name</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="log_in" translatable="false">Log In</string>
+    <string name="sign_in" translatable="false">Sign In</string>
+
+
+    <!--farmer profile creation-->
+    <string name="first_name" translatable="false">First Name</string>
+    <string name="secound_name" translatable="false">Second Name</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="contact_number" translatable="false">Contact Number</string>
+    <string name="submit" translatable="false">Submit</string>
+    <string name="createUsername" translatable="false">Create Username</string>
+    <string name="createPassword" translatable="false">Create Password</string>
+
+
+    <!--product details-->
+    <string name="product_name" translatable="false">Product Name</string>
+    <string name="temperature" translatable="false">Temperature</string>
+    <string name="humidity" translatable="false">Humidity</string>
+    <string name="fertilizer" translatable="false">Fertilizer</string>
+    <string name="farm_name" translatable="false">Farm Name</string>
+    <string name="transport_media" translatable="false">Transport Media</string>
+    <string name="weeding_type" translatable="false">Weeding Type</string>
+
+
+
 </resources>
