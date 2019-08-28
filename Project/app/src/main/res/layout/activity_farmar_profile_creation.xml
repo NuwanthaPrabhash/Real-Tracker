@@ -124,7 +124,7 @@
                 android:id="@+id/createPasswordLable"
                 android:layout_width="122dp"
                 android:layout_height="wrap_content"
-                android:text="@string/createPasswor" />
+                android:text="@string/createPassword" />
 
             <EditText
                 android:id="@+id/createPasswordEdit"
