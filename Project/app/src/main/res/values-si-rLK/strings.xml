@@ -17,10 +17,17 @@
     <string name="secound_name" translatable="false">දෙවන නම</string>
     <string name="email" translatable="false">විද්යුත් තැපෑල</string>
     <string name="contact_number" translatable="false">ඇමතුම් අංකය</string>
-    <string name="submit" translatable="false">ඉදිරිපත් කරන්න</string>
+    <string name="submit_button" translatable="false">ඉදිරිපත් කරන්න</string>
     <string name="createUsername" translatable="false">පරිශීලක නාමය සාදන්න</string>
     <string name="createPassword" translatable="false">මුරපදය සාදන්න</string>
 
+    <!--hint fields of farmer creation-->
+    <string name="enter_first_name" translatable="false">පළමු නම ඇතුළත් කරන්න</string>
+    <string name="enter_second_name" translatable="false">දෙවන නම ඇතුළත් කරන්න</string>
+    <string name="enter_email_address" translatable="false">විද්‍යුත් තැපැල් ලිපිනය ඇතුළත් කරන්න</string>
+    <string name="enter_contact_number" translatable="false">සම්බන්ධතා අංකය ඇතුළත් කරන්න</string>
+    <string name="enter_username" translatable="false">පරිශීලක නාමය ඇතුළත් කරන්න</string>
+    <string name="enter_password" translatable="false">මුරපදය ඇතුළත් කරන්න</string>
 
     <!--product details-->
     <string name="product_name" translatable="false">නිෂ්පාදන නාමය</string>

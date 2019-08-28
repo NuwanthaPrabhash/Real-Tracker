@@ -17,10 +17,17 @@
     <string name="secound_name" translatable="false">Second Name</string>
     <string name="email" translatable="false">Email</string>
     <string name="contact_number" translatable="false">Contact Number</string>
-    <string name="submit" translatable="false">Submit</string>
+    <string name="submit_button" translatable="false">Submit</string>
     <string name="createUsername" translatable="false">Create Username</string>
     <string name="createPassword" translatable="false">Create Password</string>
 
+    <!--hint fields of farmer creation-->
+    <string name="enter_first_name" translatable="false">Enter First Name</string>
+    <string name="enter_second_name" translatable="false">Enter Second Name</string>
+    <string name="enter_email_address" translatable="false">Enter Email Address</string>
+    <string name="enter_contact_number" translatable="false">Enter Contact Number</string>
+    <string name="enter_username" translatable="false">Enter Username</string>
+    <string name="enter_password" translatable="false">Enter Password</string>
 
     <!--product details-->
     <string name="product_name" translatable="false">Product Name</string>

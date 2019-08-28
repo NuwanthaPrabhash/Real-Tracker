@@ -32,7 +32,7 @@
                 android:id="@+id/firstNameEdit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter First Name" />
+                android:hint="@string/enter_first_name" />
         </LinearLayout>
 
         <!--secound name-->
@@ -51,7 +51,7 @@
                 android:id="@+id/secoundNameEdit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter Secound Name" />
+                android:hint="@string/enter_second_name" />
         </LinearLayout>
 
         <!--email-->
@@ -71,7 +71,7 @@
                 android:id="@+id/emailEdit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter Email Address"
+                android:hint="@string/enter_email_address"
                 android:inputType="textEmailAddress" />
         </LinearLayout>
 
@@ -92,7 +92,7 @@
                 android:id="@+id/contactNumberEdit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter Contact Number"
+                android:hint="@string/enter_contact_number"
                 android:inputType="number" />
         </LinearLayout>
 
@@ -112,7 +112,7 @@
                 android:id="@+id/createUsernameEdit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter Username" />
+                android:hint="@string/enter_username" />
         </LinearLayout>
 
         <LinearLayout
@@ -130,7 +130,7 @@
                 android:id="@+id/createPasswordEdit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter Password"
+                android:hint="@string/enter_password"
                 android:inputType="numberPassword" />
         </LinearLayout>
 
@@ -144,7 +144,7 @@
                 android:id="@+id/saveFarmarProfileCreation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="submit" />
+                android:text="@string/submit_button" />
 
         </LinearLayout>
 

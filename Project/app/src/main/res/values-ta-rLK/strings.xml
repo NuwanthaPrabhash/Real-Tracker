@@ -17,10 +17,17 @@
     <string name="secound_name" translatable="false">இரண்டாவது பெயர்</string>
     <string name="email" translatable="false">மின்னஞ்சல்</string>
     <string name="contact_number" translatable="false">தொடர்பு எண்</string>
-    <string name="submit" translatable="false">சமர்ப்பி</string>
+    <string name="submit_button" translatable="false">சமர்ப்பி</string>
     <string name="createUsername" translatable="false">பயனர்பெயரை உருவாக்கவும்</string>
     <string name="createPassword" translatable="false">கடவுச்சொல்லை உருவாக்கு</string>
 
+    <!--hint fields of farmer creation-->
+    <string name="enter_first_name" translatable="false">முதல் பெயரை உள்ளிடவும்</string>
+    <string name="enter_second_name" translatable="false">இரண்டாவது பெயரை உள்ளிடவும்</string>
+    <string name="enter_email_address" translatable="false">மின்னஞ்சல் முகவரியை உள்ளிடவும்</string>
+    <string name="enter_contact_number" translatable="false">தொடர்பு எண்ணை உள்ளிடவும்</string>
+    <string name="enter_username" translatable="false">பயனர்பெயரை உள்ளிடவும்</string>
+    <string name="enter_password" translatable="false">கடவுச்சொல்லை உள்ளிடவும்</string>
 
     <!--product details-->
     <string name="product_name" translatable="false">பொருளின் பெயர்</string>
