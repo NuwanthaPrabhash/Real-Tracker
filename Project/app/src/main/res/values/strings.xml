@@ -38,6 +38,15 @@
     <string name="transport_media" translatable="false">Transport Media</string>
     <string name="weeding_type" translatable="false">Weeding Type</string>
 
+    <!--hint fields for product details-->
+    <string name="enter_product_name" translatable="false">Enter Product Name</string>
+    <string name="stored_temperature" translatable="false">Stored Temperature</string>
+    <string name="enter_humidity" translatable="false">Enter Humidity</string>
+    <string name="enter_fertilizer" translatable="false">Enter Fertilizer</string>
+    <string name="enter_farm_name" translatable="false">Enter Farm Name</string>
+    <string name="enter_transport_media" translatable="false">Enter Transport Media</string>
+    <string name="enter_weeding_type" translatable="false">Enter Weeding Type</string>
+
 
 
 </resources>

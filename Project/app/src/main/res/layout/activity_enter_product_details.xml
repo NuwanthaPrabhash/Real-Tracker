@@ -26,12 +26,13 @@
                 android:id="@+id/productNameLable"
                 android:layout_width="122dp"
                 android:layout_height="wrap_content"
-                android:text="Product Name" />
+                android:text="@string/product_name" />
 
             <EditText
                 android:id="@+id/productNameEdit"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_product_name"/>
 
         </LinearLayout>
 
@@ -45,12 +46,13 @@
                 android:id="@+id/temperatureLable"
                 android:layout_width="122dp"
                 android:layout_height="wrap_content"
-                android:text="Temperature" />
+                android:text="@string/temperature" />
 
             <EditText
                 android:id="@+id/temperatureEdit"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:hint="@string/stored_temperature"/>
         </LinearLayout>
 
         <!--humidity-->
@@ -64,12 +66,13 @@
                 android:id="@+id/humidityLable"
                 android:layout_width="122dp"
                 android:layout_height="wrap_content"
-                android:text="Humidity" />
+                android:text="@string/humidity" />
 
             <EditText
                 android:id="@+id/humidityEdit"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_humidity"/>
 
         </LinearLayout>
 
@@ -84,12 +87,13 @@
                 android:id="@+id/fertilizerLable"
                 android:layout_width="122dp"
                 android:layout_height="wrap_content"
-                android:text="Fertilizer" />
+                android:text="@string/fertilizer" />
 
             <EditText
                 android:id="@+id/fertilizerEdit"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_fertilizer"/>
 
         </LinearLayout>
 
@@ -103,12 +107,13 @@
                 android:id="@+id/farmNameLable"
                 android:layout_width="122dp"
                 android:layout_height="wrap_content"
-                android:text="Farm NAme" />
+                android:text="@string/farm_name" />
 
             <EditText
                 android:id="@+id/farmNameEdit"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_farm_name"/>
 
         </LinearLayout>
 
@@ -122,12 +127,13 @@
                 android:id="@+id/transportMediaLable"
                 android:layout_width="122dp"
                 android:layout_height="wrap_content"
-                android:text="Transport Media" />
+                android:text="@string/transport_media" />
 
             <EditText
                 android:id="@+id/transportMediaEdit"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_transport_media"/>
 
         </LinearLayout>
 
@@ -141,12 +147,13 @@
                 android:id="@+id/weedingTypeLable"
                 android:layout_width="122dp"
                 android:layout_height="wrap_content"
-                android:text="Weeding Type" />
+                android:text="@string/weeding_type" />
 
             <EditText
                 android:id="@+id/weedingTypeEdit"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_weeding_type"/>
 
         </LinearLayout>
 
@@ -160,7 +167,7 @@
                 android:id="@+id/productDetailsSaveButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Submit" />
+                android:text="@string/submit_button" />
         </LinearLayout>
 
     </LinearLayout>

@@ -109,33 +109,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-//    // Show the items
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//
-//        MenuInflater inflater = getMenuInflater();
-//        inflater.inflate(R.menu.menu, menu);
-//        return true;
-//    }
-//
-//    // execute the item
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//
-//        switch (item.getItemId()){
-//            case R.id.settings : Toast.makeText(this, "Settings Clicked", Toast.LENGTH_SHORT).show();
-//                return true;
-//            case R.id.aboutUs : Toast.makeText(this, " About us Clicked", Toast.LENGTH_SHORT).show() ;
-//                return true;
-//            case R.id.contactUs : Toast.makeText(this, " Contact us Clicked", Toast.LENGTH_SHORT).show();
-//                return true;
-//
-//        }
-//
-//        return false;
-//    }
 
-    //////////  show Alert box when click back /////////
 
     @Override
     public void onBackPressed() {
