@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Real Tracker</string>
+
+    <string name="farmer" translatable="false">உழவர்</string>
+    <string name="customer" translatable="false">வாடிக்கையாளர்</string>
+    <string name="change_language" translatable="false">மொழியை மாற்றுங்கள்</string>
+
+    <!--login and sign-->
+    <string name="user_name" translatable="false">பயனர் பெயர்</string>
+    <string name="password" translatable="false">கடவுச்சொல்</string>
+    <string name="log_in" translatable="false">உள் நுழை</string>
+    <string name="sign_in" translatable="false">உள்நுழைக</string>
+
+    <!--farmer profile creation-->
+    <string name="first_name" translatable="false">முதல் பெயர்</string>
+    <string name="secound_name" translatable="false">இரண்டாவது பெயர்</string>
+    <string name="email" translatable="false">மின்னஞ்சல்</string>
+    <string name="contact_number" translatable="false">தொடர்பு எண்</string>
+    <string name="submit" translatable="false">சமர்ப்பி</string>
+    <string name="createUsername" translatable="false">பயனர்பெயரை உருவாக்கவும்</string>
+    <string name="createPassword" translatable="false">கடவுச்சொல்லை உருவாக்கு</string>
+
+
+    <!--product details-->
+    <string name="product_name" translatable="false">பொருளின் பெயர்</string>
+    <string name="temperature" translatable="false">வெப்ப நிலை</string>
+    <string name="humidity" translatable="false">ஈரப்பதம்</string>
+    <string name="fertilizer" translatable="false">உர</string>
+    <string name="farm_name" translatable="false">பண்ணை பெயர்</string>
+    <string name="transport_media" translatable="false">போக்குவரத்து ஊடகம்</string>
+    <string name="weeding_type" translatable="false">களையெடுக்கும் வகை</string>
+
+
+</resources>

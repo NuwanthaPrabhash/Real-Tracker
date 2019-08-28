@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Real Tracker</string>
+
+    <string name="farmer" translatable="false">Feirmeoir</string>
+    <string name="customer" translatable="false">custaiméir</string>
+    <string name="change_language" translatable="false">Athraigh an Teanga</string>
+
+    <!--login and sign-->
+    <string name="user_name" translatable="false">Ainm an Úsáideora</string>
+    <string name="password" translatable="false">Focal Faire</string>
+    <string name="log_in" translatable="false">Logáil Isteach</string>
+    <string name="sign_in" translatable="false">Sínigh isteach</string>
+
+    <!--farmer profile creation-->
+    <string name="first_name" translatable="false">Ainm</string>
+    <string name="secound_name" translatable="false">An Dara Ainm</string>
+    <string name="email" translatable="false">Ríomhphost</string>
+    <string name="contact_number" translatable="false">Uimhir theagmhála</string>
+    <string name="submit" translatable="false">Cuir isteach</string>
+    <string name="createUsername" translatable="false">Cruthaigh Ainm Úsáideora</string>
+    <string name="createPassword" translatable="false">Cruthaigh Pasfhocal</string>
+
+
+    <!--product details-->
+    <string name="product_name" translatable="false">Ainm Táirge</string>
+    <string name="temperature" translatable="false">Teocht</string>
+    <string name="humidity" translatable="false">Taise</string>
+    <string name="fertilizer" translatable="false">Leasachán</string>
+    <string name="farm_name" translatable="false">Ainm Feirme</string>
+    <string name="transport_media" translatable="false">Meáin Iompair</string>
+    <string name="weeding_type" translatable="false">Cineál fiailí</string>
+
+
+
+</resources>
