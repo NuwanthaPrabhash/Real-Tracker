@@ -1,4 +1,4 @@
-package com.example.mainactivity.controllers;
+package com.example.mainactivity.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -23,14 +23,14 @@ public class EnterProductDetails extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_enter_product_details);
 
-        productNameEdit = (EditText) findViewById(R.id.productNameEdit);
-        temperatureEdit = (EditText) findViewById(R.id.temperatureEdit);
-        humidityEdit = (EditText) findViewById(R.id.humidityEdit);
-        fertilizerEdit = (EditText) findViewById(R.id.fertilizerEdit);
-        farmNameEdit = (EditText) findViewById(R.id.farmNameEdit);
-        transportMediaEdit = (EditText) findViewById(R.id.transportMediaEdit);
-        weedingTypeEdit = (EditText) findViewById(R.id.weedingTypeEdit);
-        productDetailsSaveButton = (Button) findViewById(R.id.productDetailsSaveButton);
+        productNameEdit = findViewById(R.id.productNameEdit);
+        temperatureEdit = findViewById(R.id.temperatureEdit);
+        humidityEdit = findViewById(R.id.humidityEdit);
+        fertilizerEdit = findViewById(R.id.fertilizerEdit);
+        farmNameEdit = findViewById(R.id.farmNameEdit);
+        transportMediaEdit = findViewById(R.id.transportMediaEdit);
+        weedingTypeEdit = findViewById(R.id.weedingTypeEdit);
+        productDetailsSaveButton = findViewById(R.id.productDetailsSaveButton);
 
         productDetails = new ProductDetails();
         databaseReference = FirebaseDatabase.getInstance().getReference().child("ProductDetails");  // all these together to connect the database

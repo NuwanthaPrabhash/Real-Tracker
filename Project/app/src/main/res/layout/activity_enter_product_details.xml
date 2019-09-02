@@ -4,171 +4,214 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/logo"
-    tools:context=".controllers.EnterProductDetails">
+    android:background="@drawable/plantone"
+    tools:context=".activities.EnterProductDetails">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginBottom="30dp"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <!--product name-->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/productNameLable"
-                android:layout_width="122dp"
-                android:layout_height="wrap_content"
-                android:text="@string/product_name" />
-
-            <EditText
-                android:id="@+id/productNameEdit"
+            <!--product name-->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/enter_product_name"/>
+                android:orientation="horizontal"
+                android:background="@drawable/background_color"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
 
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/productNameLable"
+                    android:layout_width="122dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/product_name" />
 
-        <!--temperature-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/productNameEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="@string/enter_product_name"/>
 
-            <TextView
-                android:id="@+id/temperatureLable"
-                android:layout_width="122dp"
-                android:layout_height="wrap_content"
-                android:text="@string/temperature" />
+            </LinearLayout>
 
-            <EditText
-                android:id="@+id/temperatureEdit"
+            <!--temperature-->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/stored_temperature"/>
-        </LinearLayout>
+                android:orientation="horizontal"
+                android:background="@drawable/background_color"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
 
-        <!--humidity-->
-        <!--ardrathawaya-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/temperatureLable"
+                    android:layout_width="122dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/temperature" />
 
-            <TextView
-                android:id="@+id/humidityLable"
-                android:layout_width="122dp"
-                android:layout_height="wrap_content"
-                android:text="@string/humidity" />
+                <EditText
+                    android:id="@+id/temperatureEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="@string/stored_temperature"/>
+            </LinearLayout>
 
-            <EditText
-                android:id="@+id/humidityEdit"
+            <!--humidity-->
+            <!--ardrathawaya-->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/enter_humidity"/>
+                android:orientation="horizontal"
+                android:background="@drawable/background_color"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
 
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/humidityLable"
+                    android:layout_width="122dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/humidity" />
 
-        <!--fertilizer-->
-        <!--pohora-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/humidityEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="@string/enter_humidity"/>
 
-            <TextView
-                android:id="@+id/fertilizerLable"
-                android:layout_width="122dp"
-                android:layout_height="wrap_content"
-                android:text="@string/fertilizer" />
+            </LinearLayout>
 
-            <EditText
-                android:id="@+id/fertilizerEdit"
+            <!--fertilizer-->
+            <!--pohora-->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/enter_fertilizer"/>
+                android:orientation="horizontal"
+                android:background="@drawable/background_color"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
 
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/fertilizerLable"
+                    android:layout_width="122dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/fertilizer" />
 
-        <!--farm name-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/fertilizerEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="@string/enter_fertilizer"/>
 
-            <TextView
-                android:id="@+id/farmNameLable"
-                android:layout_width="122dp"
-                android:layout_height="wrap_content"
-                android:text="@string/farm_name" />
+            </LinearLayout>
 
-            <EditText
-                android:id="@+id/farmNameEdit"
+            <!--farm name-->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/enter_farm_name"/>
+                android:orientation="horizontal"
+                android:background="@drawable/background_color"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
 
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/farmNameLable"
+                    android:layout_width="122dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/farm_name" />
 
-        <!--transport media-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/farmNameEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="@string/enter_farm_name"/>
 
-            <TextView
-                android:id="@+id/transportMediaLable"
-                android:layout_width="122dp"
-                android:layout_height="wrap_content"
-                android:text="@string/transport_media" />
+            </LinearLayout>
 
-            <EditText
-                android:id="@+id/transportMediaEdit"
+            <!--transport media-->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/enter_transport_media"/>
+                android:orientation="horizontal"
+                android:background="@drawable/background_color"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
 
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/transportMediaLable"
+                    android:layout_width="122dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/transport_media" />
 
-        <!--weeding type-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/transportMediaEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="@string/enter_transport_media"/>
 
-            <TextView
-                android:id="@+id/weedingTypeLable"
-                android:layout_width="122dp"
-                android:layout_height="wrap_content"
-                android:text="@string/weeding_type" />
+            </LinearLayout>
 
-            <EditText
-                android:id="@+id/weedingTypeEdit"
+            <!--weeding type-->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/enter_weeding_type"/>
+                android:orientation="horizontal"
+                android:background="@drawable/background_color"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
 
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/weedingTypeLable"
+                    android:layout_width="122dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/weeding_type" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/weedingTypeEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="@string/enter_weeding_type"/>
 
-            <Button
-                android:id="@+id/productDetailsSaveButton"
-                android:layout_width="wrap_content"
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/submit_button" />
-        </LinearLayout>
+                android:gravity="right"
+                android:orientation="horizontal">
 
-    </LinearLayout>
+                <Button
+                    android:id="@+id/productDetailsSaveButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/submit_button"
+                    android:background="@drawable/background_color"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
 </android.support.constraint.ConstraintLayout>

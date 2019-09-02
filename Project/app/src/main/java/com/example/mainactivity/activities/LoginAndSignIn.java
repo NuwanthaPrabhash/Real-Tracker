@@ -1,4 +1,4 @@
-package com.example.mainactivity.controllers;
+package com.example.mainactivity.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -19,10 +19,10 @@ public class LoginAndSignIn extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_and_sign_in);
 
-        logIn = (Button) findViewById(R.id.logIn);
-        signIn = (Button) findViewById(R.id.signIn);
-        userNameEdit = (EditText) findViewById(R.id.userNameEdit);
-        passwordEdit = (EditText) findViewById(R.id.passwordEdit);
+        logIn = findViewById(R.id.logIn);
+        signIn = findViewById(R.id.signIn);
+        userNameEdit = findViewById(R.id.userNameEdit);
+        passwordEdit = findViewById(R.id.passwordEdit);
 
         logIn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,4 +46,5 @@ public class LoginAndSignIn extends AppCompatActivity {
             }
         });
     }
+
 }

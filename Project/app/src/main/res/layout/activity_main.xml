@@ -1,54 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/logo"
-    tools:context=".controllers.MainActivity">
-
-    <LinearLayout
+    tools:context=".activities.MainActivity">
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginBottom="30dp"
-        android:gravity="center"
-        android:orientation="vertical">
-
-        <LinearLayout
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imageview"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/farmarButton"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:text="@string/farmer"
-                android:textColor="#ff00" />
-
-            <Button
-                android:id="@+id/customerButton"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:text="@string/customer"
-                android:textColor="#ff00" />
-        </LinearLayout>
-
-        <LinearLayout
+            android:layout_height="match_parent"
+            android:background="@drawable/scan"
+            android:scaleType="centerCrop"/>
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center">
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <Button
+                    android:textAllCaps="false"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button_click_color_change"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/customerButton"
+                    android:text="@string/customer"
+                    android:layout_width="300dp"
+                    android:layout_height="80dp" />
+                <Button
+                    android:textAllCaps="false"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button_click_color_change"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/farmarButton"
+                    android:text="@string/farmer"
+                    android:layout_width="300dp"
+                    android:layout_height="80dp" />
+                <Button
+                    android:textAllCaps="false"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button_click_color_change"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/changeLanguage"
+                    android:text="@string/change_language"
+                    android:layout_width="300dp"
+                    android:layout_height="80dp" />
+            </LinearLayout>
+        </RelativeLayout>
 
-            <Button
-                android:id="@+id/changeLanguage"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/change_language"/>
-        </LinearLayout>
-    </LinearLayout>
-
+    </RelativeLayout>
 </LinearLayout>

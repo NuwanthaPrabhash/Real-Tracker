@@ -13,6 +13,8 @@
 
 
     <!--farmer profile creation-->
+    <string name="profilePicSelelct" translatable="false">Select Picture</string>
+    <string name="profilePicupload" translatable="false">Upload</string>
     <string name="first_name" translatable="false">First Name</string>
     <string name="secound_name" translatable="false">Second Name</string>
     <string name="email" translatable="false">Email</string>
@@ -20,6 +22,7 @@
     <string name="submit_button" translatable="false">Submit</string>
     <string name="createUsername" translatable="false">Create Username</string>
     <string name="createPassword" translatable="false">Create Password</string>
+
 
     <!--hint fields of farmer creation-->
     <string name="enter_first_name" translatable="false">Enter First Name</string>
@@ -46,7 +49,6 @@
     <string name="enter_farm_name" translatable="false">Enter Farm Name</string>
     <string name="enter_transport_media" translatable="false">Enter Transport Media</string>
     <string name="enter_weeding_type" translatable="false">Enter Weeding Type</string>
-
 
 
 </resources>

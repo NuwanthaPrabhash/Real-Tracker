@@ -13,6 +13,8 @@
     <string name="sign_in" translatable="false">உள்நுழைக</string>
 
     <!--farmer profile creation-->
+    <string name="profilePicSelelct" translatable="false">படத்தைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="profilePicupload" translatable="false">பதிவேற்றம்</string>
     <string name="first_name" translatable="false">முதல் பெயர்</string>
     <string name="secound_name" translatable="false">இரண்டாவது பெயர்</string>
     <string name="email" translatable="false">மின்னஞ்சல்</string>

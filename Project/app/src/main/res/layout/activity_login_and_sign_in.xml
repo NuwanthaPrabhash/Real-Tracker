@@ -4,91 +4,93 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/logo"
-    tools:context=".controllers.LoginAndSignIn">
+    tools:context=".activities.LoginAndSignIn"
+    android:background="@drawable/background_color">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center_vertical"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginBottom="30dp"
-        android:orientation="vertical"
-        tools:ignore="MissingConstraints">
+        android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/userImg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/logo"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:clickable="true"
+            app:civ_border_width="3dp"
+            app:civ_border_color="#FFFFFFFF"
+            android:id="@+id/profilePicture"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp"
+            android:elevation="5dp"
+            android:padding="20dp"
+            android:scaleType="centerCrop"
             android:src="@drawable/userimg" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="186dp"
-            tools:layout_editor_absoluteY="16dp">
-
-            <TextView
-                android:id="@+id/userNameLable"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:text="@string/user_name"
-                tools:ignore="MissingConstraints" />
+            android:layout_height="120dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="340dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/background_color"
+            android:orientation="vertical">
 
             <EditText
                 android:id="@+id/userNameEdit"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                tools:ignore="MissingConstraints" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:ignore="MissingConstraints">
-
-            <TextView
-                android:id="@+id/passwordLable"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:text="@string/password"
-                tools:ignore="MissingConstraints" />
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/background_color"
+                android:gravity="center"
+                android:hint="@string/enter_username" />
 
             <EditText
                 android:id="@+id/passwordEdit"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                tools:ignore="MissingConstraints" />
-
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/background_color"
+                android:gravity="center"
+                android:hint="@string/enter_password" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:orientation="horizontal">
+            android:layout_height="120dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="470dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
 
-            <Button
-                android:id="@+id/logIn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/log_in" />
+            <RelativeLayout
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center">
 
-            <Button
-                android:id="@+id/signIn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/sign_in" />
+                <Button
+                    android:id="@+id/logIn"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="125dp"
+                    android:background="@drawable/background_color"
+                    android:text="@string/log_in" />
+
+                <Button
+                    android:id="@+id/signIn"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="125dp"
+                    android:background="@drawable/background_color"
+                    android:text="@string/sign_in" />
+            </RelativeLayout>
+
         </LinearLayout>
-    </LinearLayout>
-
+    </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

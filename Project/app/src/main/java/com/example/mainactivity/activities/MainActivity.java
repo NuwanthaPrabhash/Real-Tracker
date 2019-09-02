@@ -1,24 +1,28 @@
-package com.example.mainactivity.controllers;
+package com.example.mainactivity.activities;
 
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
+import android.widget.ImageView;
 
 import com.example.mainactivity.R;
+import com.prihanofficial.rabbit.logics.Rabbit;
 
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
     Button farmarButton, customerButton, changeLanguage;
+    ImageView imageview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,11 +30,26 @@ public class MainActivity extends AppCompatActivity {
         loadLocal();
         setContentView(R.layout.activity_main);
 
-        Toast.makeText(MainActivity.this, "Firebase Connection is Success", Toast.LENGTH_LONG).show();
+        imageview = findViewById(R.id.imageview);
+        farmarButton = findViewById(R.id.farmarButton);
+        customerButton = findViewById(R.id.customerButton);
+        changeLanguage =  findViewById(R.id.changeLanguage);
 
-        farmarButton = (Button) findViewById(R.id.farmarButton);
-        customerButton = (Button) findViewById(R.id.customerButton);
-        changeLanguage = (Button) findViewById(R.id.changeLanguage);
+        /// for bluer image
+
+        Bitmap bitmap1 = BitmapFactory.decodeResource(this.getResources(), R.drawable.scan);
+        Rabbit.setContext(this)
+                .setBitMap(bitmap1)
+                .setScale(1.1f)
+                .setRaius(24.0f)
+                .setConstarst(0.0f)
+                .setBrightnes(1.0f)
+                .build();
+
+        Rabbit.getModifiedRabbitBitmap();
+        imageview.setImageBitmap(Rabbit.getModifiedRabbitBitmap());
+        ///
+
 
         farmarButton.setOnClickListener(new View.OnClickListener() {
             @Override

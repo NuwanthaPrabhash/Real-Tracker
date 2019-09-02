@@ -13,6 +13,8 @@
     <string name="sign_in" translatable="false">පුරන්න</string>
 
     <!--farmer profile creation-->
+    <string name="profilePicSelelct" translatable="false">පින්තූරය තෝරන්න</string>
+    <string name="profilePicupload" translatable="false">උඩුගත කරන්න</string>
     <string name="first_name" translatable="false">මුල් නම</string>
     <string name="secound_name" translatable="false">දෙවන නම</string>
     <string name="email" translatable="false">විද්යුත් තැපෑල</string>
