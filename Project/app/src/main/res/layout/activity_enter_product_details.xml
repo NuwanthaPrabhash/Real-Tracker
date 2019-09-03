@@ -23,7 +23,7 @@
             <!--product name-->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:orientation="horizontal"
                 android:background="@drawable/background_color"
                 android:layout_marginTop="10dp"
@@ -32,15 +32,16 @@
                 <TextView
                     android:id="@+id/productNameLable"
                     android:layout_width="122dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:gravity="center"
                     android:text="@string/product_name" />
 
                 <EditText
                     android:id="@+id/productNameEdit"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:gravity="center"
+                    android:background="@drawable/background_color"
                     android:hint="@string/enter_product_name"/>
 
             </LinearLayout>
@@ -48,7 +49,7 @@
             <!--temperature-->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:orientation="horizontal"
                 android:background="@drawable/background_color"
                 android:layout_marginTop="10dp"
@@ -57,15 +58,16 @@
                 <TextView
                     android:id="@+id/temperatureLable"
                     android:layout_width="122dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:gravity="center"
                     android:text="@string/temperature" />
 
                 <EditText
                     android:id="@+id/temperatureEdit"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:gravity="center"
+                    android:background="@drawable/background_color"
                     android:hint="@string/stored_temperature"/>
             </LinearLayout>
 
@@ -73,7 +75,7 @@
             <!--ardrathawaya-->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:orientation="horizontal"
                 android:background="@drawable/background_color"
                 android:layout_marginTop="10dp"
@@ -82,15 +84,16 @@
                 <TextView
                     android:id="@+id/humidityLable"
                     android:layout_width="122dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:gravity="center"
                     android:text="@string/humidity" />
 
                 <EditText
                     android:id="@+id/humidityEdit"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:gravity="center"
+                    android:background="@drawable/background_color"
                     android:hint="@string/enter_humidity"/>
 
             </LinearLayout>
@@ -99,7 +102,7 @@
             <!--pohora-->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:orientation="horizontal"
                 android:background="@drawable/background_color"
                 android:layout_marginTop="10dp"
@@ -108,15 +111,16 @@
                 <TextView
                     android:id="@+id/fertilizerLable"
                     android:layout_width="122dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:gravity="center"
                     android:text="@string/fertilizer" />
 
                 <EditText
                     android:id="@+id/fertilizerEdit"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:gravity="center"
+                    android:background="@drawable/background_color"
                     android:hint="@string/enter_fertilizer"/>
 
             </LinearLayout>
@@ -124,7 +128,7 @@
             <!--farm name-->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:orientation="horizontal"
                 android:background="@drawable/background_color"
                 android:layout_marginTop="10dp"
@@ -133,15 +137,16 @@
                 <TextView
                     android:id="@+id/farmNameLable"
                     android:layout_width="122dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:gravity="center"
                     android:text="@string/farm_name" />
 
                 <EditText
                     android:id="@+id/farmNameEdit"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:gravity="center"
+                    android:background="@drawable/background_color"
                     android:hint="@string/enter_farm_name"/>
 
             </LinearLayout>
@@ -149,7 +154,7 @@
             <!--transport media-->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:orientation="horizontal"
                 android:background="@drawable/background_color"
                 android:layout_marginTop="10dp"
@@ -158,15 +163,16 @@
                 <TextView
                     android:id="@+id/transportMediaLable"
                     android:layout_width="122dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:gravity="center"
                     android:text="@string/transport_media" />
 
                 <EditText
                     android:id="@+id/transportMediaEdit"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:gravity="center"
+                    android:background="@drawable/background_color"
                     android:hint="@string/enter_transport_media"/>
 
             </LinearLayout>
@@ -174,7 +180,7 @@
             <!--weeding type-->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:orientation="horizontal"
                 android:background="@drawable/background_color"
                 android:layout_marginTop="10dp"
@@ -183,15 +189,16 @@
                 <TextView
                     android:id="@+id/weedingTypeLable"
                     android:layout_width="122dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:gravity="center"
                     android:text="@string/weeding_type" />
 
                 <EditText
                     android:id="@+id/weedingTypeEdit"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:gravity="center"
+                    android:background="@drawable/background_color"
                     android:hint="@string/enter_weeding_type"/>
 
             </LinearLayout>

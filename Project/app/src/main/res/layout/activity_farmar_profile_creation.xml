@@ -17,7 +17,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="230dp"
+            android:layout_height="180dp"
             android:orientation="vertical">
 
             <RelativeLayout
@@ -30,15 +30,15 @@
                     android:id="@+id/profilePicUploadImageView"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:layout_marginLeft="38dp"
+                    android:layout_marginTop="40dp"
                     android:background="@drawable/userimg"/>
 
                 <Button
                     android:id="@+id/profilePicSelelctButton"
                     android:layout_width="100dp"
                     android:layout_height="50dp"
-                    android:layout_marginTop="165dp"
-                    android:layout_marginRight="125dp"
+                    android:layout_marginTop="125dp"
+                    android:layout_marginLeft="180dp"
                     android:background="@drawable/background_color"
                     android:text="@string/profilePicSelelct" />
 
@@ -51,7 +51,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="230dp"
+            android:layout_marginTop="200dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp"
             android:orientation="vertical">
@@ -60,7 +60,7 @@
             <!--first name-->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:orientation="horizontal"
                 android:background="@drawable/background_color"
                 android:layout_marginTop="10dp"
@@ -69,14 +69,14 @@
                 <TextView
                     android:id="@+id/firstNameLable"
                     android:layout_width="122dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:gravity="center"
                     android:text="@string/first_name" />
 
                 <EditText
                     android:id="@+id/firstNameEdit"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:gravity="center"
                     android:background="@drawable/background_color"
                     android:hint="@string/enter_first_name" />
@@ -85,7 +85,7 @@
             <!--secound name-->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:orientation="horizontal"
                 android:background="@drawable/background_color"
                 android:layout_marginTop="10dp"
@@ -94,14 +94,14 @@
                 <TextView
                     android:id="@+id/secoundNameLable"
                     android:layout_width="122dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:gravity="center"
                     android:text="@string/secound_name" />
 
                 <EditText
                     android:id="@+id/secoundNameEdit"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:gravity="center"
                     android:background="@drawable/background_color"
                     android:hint="@string/enter_second_name" />
@@ -111,7 +111,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:orientation="horizontal"
                 android:background="@drawable/background_color"
                 android:layout_marginTop="10dp"
@@ -120,14 +120,14 @@
                 <TextView
                     android:id="@+id/emailLable"
                     android:layout_width="122dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:gravity="center"
                     android:text="@string/email" />
 
                 <EditText
                     android:id="@+id/emailEdit"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:hint="@string/enter_email_address"
                     android:gravity="center"
                     android:background="@drawable/background_color"
@@ -138,7 +138,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:orientation="horizontal"
                 android:background="@drawable/background_color"
                 android:layout_marginTop="10dp"
@@ -147,14 +147,14 @@
                 <TextView
                     android:id="@+id/contactNumberLable"
                     android:layout_width="122dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:gravity="center"
                     android:text="@string/contact_number" />
 
                 <EditText
                     android:id="@+id/contactNumberEdit"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:hint="@string/enter_contact_number"
                     android:gravity="center"
                     android:background="@drawable/background_color"
@@ -164,7 +164,7 @@
             <!--create username-->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:orientation="horizontal"
                 android:background="@drawable/background_color"
                 android:layout_marginTop="10dp"
@@ -173,14 +173,14 @@
                 <TextView
                     android:id="@+id/createUsernameLable"
                     android:layout_width="122dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:gravity="center"
                     android:text="@string/createUsername" />
 
                 <EditText
                     android:id="@+id/createUsernameEdit"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:gravity="center"
                     android:background="@drawable/background_color"
                     android:hint="@string/enter_username" />
@@ -189,7 +189,7 @@
             <!--create password-->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:orientation="horizontal"
                 android:background="@drawable/background_color"
                 android:layout_marginTop="10dp"
@@ -198,14 +198,14 @@
                 <TextView
                     android:id="@+id/createPasswordLable"
                     android:layout_width="122dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:gravity="center"
                     android:text="@string/createPassword" />
 
                 <EditText
                     android:id="@+id/createPasswordEdit"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:hint="@string/enter_password"
                     android:gravity="center"
                     android:background="@drawable/background_color"

@@ -30,17 +30,11 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.StorageTask;
 import com.google.firebase.storage.UploadTask;
-import com.prihanofficial.rabbit.logics.Rabbit;
-
-import java.io.File;
-import java.io.IOException;
-
-import de.hdodenhof.circleimageview.CircleImageView;
 
 public class FarmarProfileCreation extends AppCompatActivity {
 
     EditText firstNameEdit, secoundNameEdit, emailEdit, contactNumberEdit, createUsernameEdit, createPasswordEdit;
-    Button saveFarmarProfileCreation, profilePicSelelctButton, profilePicUploadButton;
+    Button  profilePicSelelctButton, profilePicUploadButton;
     FarmarProfileCreationModel farmarProfileCreationModel;
     DatabaseReference databaseReference;
     ImageView imageView, profilePicUploadImageView;
@@ -66,8 +60,6 @@ public class FarmarProfileCreation extends AppCompatActivity {
         contactNumberEdit = findViewById(R.id.contactNumberEdit);
         createUsernameEdit = findViewById(R.id.createUsernameEdit);
         createPasswordEdit = findViewById(R.id.createPasswordEdit);
-        saveFarmarProfileCreation = findViewById(R.id.saveFarmarProfileCreation);
-
 
         farmarProfileCreationModel = new FarmarProfileCreationModel();
         databaseReference = FirebaseDatabase.getInstance().getReference().child("FarmerProfiles");  // all these together to connect the database
@@ -87,27 +79,7 @@ public class FarmarProfileCreation extends AppCompatActivity {
 //        Rabbit.getModifiedRabbitBitmap();
 //        imageView.setImageBitmap(Rabbit.getModifiedRabbitBitmap());
 //        ///
-        saveFarmarProfileCreation.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-//                setData();
-//kkkkkkkkkk
-////                farmarProfileCreationModel.setFirstNameEdit(firstNameEdit.getText().toString().trim());
-////                farmarProfileCreationModel.setSecoundNameEdit(secoundNameEdit.getText().toString().trim());
-////                farmarProfileCreationModel.setEmailEdit(emailEdit.getText().toString().trim());
-////                farmarProfileCreationModel.setContactNumberEdit(Integer.valueOf(contactNumberEdit.getText().toString().trim()));
-////                farmarProfileCreationModel.setCreateUsernameEdit(createUsernameEdit.getText().toString().trim());
-////                farmarProfileCreationModel.setCreatePasswordEdit(Integer.valueOf(createPasswordEdit.getText().toString().trim()));
-////
-////                databaseReference.push().setValue(farmarProfileCreationModel);
-//kkkkkkkkkkkkkkk
-//                Intent saveFarmarProfileCreationIntent = new Intent(FarmarProfileCreation.this, EnterProductDetails.class);
-//                startActivity(saveFarmarProfileCreationIntent);
-
-
-            }
-        });
 
         profilePicSelelctButton.setOnClickListener(new View.OnClickListener() {
             @Override
