@@ -40,5 +40,14 @@
     <string name="transport_media" translatable="false">ප්‍රවාහන මාධ්‍ය</string>
     <string name="weeding_type" translatable="false">වල් නෙලීමේ වර්ගය</string>
 
+    <!--hint fields for product details-->
+    <string name="enter_product_name" translatable="false">නිෂ්පාදන නම ඇතුළත් කරන්න</string>
+    <string name="stored_temperature" translatable="false">ගබඩා කළ උෂ්ණත්වය</string>
+    <string name="enter_humidity" translatable="false">ආර්ද්‍රතාවය ඇතුළත් කරන්න</string>
+    <string name="enter_fertilizer" translatable="false">භාවිතා කළ පොහොර</string>
+    <string name="enter_farm_name" translatable="false">ගොවිපල නම ඇතුළත් කරන්න</string>
+    <string name="enter_transport_media" translatable="false">ප්‍රවාහන මාධ්‍ය ඇතුළු කරන්න</string>
+    <string name="enter_weeding_type" translatable="false">වල් නෙලීමේ වර්ගය ඇතුළත් කරන්න</string>
+
 
 </resources>

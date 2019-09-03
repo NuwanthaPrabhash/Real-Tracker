@@ -40,5 +40,14 @@
     <string name="transport_media" translatable="false">போக்குவரத்து ஊடகம்</string>
     <string name="weeding_type" translatable="false">களையெடுக்கும் வகை</string>
 
+    <!--hint fields for product details-->
+    <string name="enter_product_name" translatable="false">தயாரிப்பு பெயரை உள்ளிடவும்</string>
+    <string name="stored_temperature" translatable="false">சேமிக்கப்பட்ட வெப்பநிலை</string>
+    <string name="enter_humidity" translatable="false">ஈரப்பதத்தை உள்ளிடவும்</string>
+    <string name="enter_fertilizer" translatable="false">பயன்படுத்திய உரம்</string>
+    <string name="enter_farm_name" translatable="false">பண்ணை பெயரை உள்ளிடவும்</string>
+    <string name="enter_transport_media" translatable="false">போக்குவரத்து மீடியாவை உள்ளிடவும்</string>
+    <string name="enter_weeding_type" translatable="false">களையெடுப்பு வகையை உள்ளிடவும்</string>
+
 
 </resources>
