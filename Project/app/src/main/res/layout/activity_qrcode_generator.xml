@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QRCodeGenerator">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/dbName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/product_name"/>
+
+            <TextView
+                android:id="@+id/dbTemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/temperature"/>
+
+            <TextView
+                android:id="@+id/dbHumidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/humidity"/>
+
+            <TextView
+                android:id="@+id/dbFertilizer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/fertilizer"/>
+
+            <TextView
+                android:id="@+id/dbFarmName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/farm_name"/>
+
+            <TextView
+                android:id="@+id/dbTransportMedia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/transport_media"/>
+
+            <TextView
+                android:id="@+id/dbWeedingType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/weeding_type"/>
+
+            <Button
+                android:id="@+id/qrGeneratorButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="300dp"
+                android:text="generate"/>
+
+            <Button
+                android:id="@+id/dataView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="view data"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

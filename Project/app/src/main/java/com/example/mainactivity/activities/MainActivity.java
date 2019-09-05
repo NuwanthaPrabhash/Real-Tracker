@@ -63,9 +63,8 @@ public class MainActivity extends AppCompatActivity {
         customerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Intent customerButtonIntent = new Intent(MainActivity.this, CustomerScanner.class);
-                startActivity(customerButtonIntent);
+                Intent scan = new Intent(MainActivity.this, QrCodeScannerActivity.class);
+                startActivity(scan);
             }
         });
 
@@ -75,6 +74,9 @@ public class MainActivity extends AppCompatActivity {
                 showChangeLanguageDialog();
             }
         });
+
+
+
     }
 
     private void showChangeLanguageDialog() {

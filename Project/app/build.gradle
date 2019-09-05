@@ -37,5 +37,23 @@ dependencies {
     //image circle
     implementation 'de.hdodenhof:circleimageview:2.1.0'
 
+    //for QR Generator
+//    implementation 'androidmads.library.qrgenearator:QRGenearator:1.0.3'
+
+
+    //QR saner
+//    implementation 'com.wonderkiln:camerakit:0.13.1'
+//    implementation 'com.google.firebase:firebase-core:16.0.4'
+//    implementation 'com.google.firebase:firebase-ml-vision:17.0.0'
+//    implementation 'com.github.d-max:spots-dialog:1.1@arr'
+
+    implementation 'com.google.zxing:core:3.3.3'
+    implementation 'com.journeyapps:zxing-android-embedded:3.2.0@aar'
+//    implementation 'com.google.firebase:firebase-ml-vision:16.0.0'
+
+    implementation 'me.dm7.barcodescanner:zxing:1.9'
+
 
 }
+
+apply plugin: 'com.google.gms.google-services'
