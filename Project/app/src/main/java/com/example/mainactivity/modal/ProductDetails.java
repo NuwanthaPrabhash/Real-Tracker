@@ -5,8 +5,8 @@ public class ProductDetails {
     private Integer id;
     private String productNameEdit;
     private Integer temperatureEdit;
-    private Integer humidityEdit; // ardrathawaya
-    private String fertilizerEdit; // pohora
+    private Integer humidityEdit;
+    private String fertilizerEdit;
     private String farmNameEdit;
     private String transportMediaEdit;
     private String weedingTypeEdit;

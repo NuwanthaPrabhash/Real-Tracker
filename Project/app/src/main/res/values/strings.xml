@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">mainActivity</string>
+    <string name="app_name" translatable="false">Real Tracker</string>
 
     <string name="farmer" translatable="false">Farmer</string>
     <string name="customer" translatable="false">Customer</string>

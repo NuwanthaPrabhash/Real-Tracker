@@ -34,7 +34,7 @@ import com.google.firebase.storage.UploadTask;
 public class FarmarProfileCreation extends AppCompatActivity {
 
     EditText firstNameEdit, secoundNameEdit, emailEdit, contactNumberEdit, createUsernameEdit, createPasswordEdit;
-    Button  profilePicSelelctButton, profilePicUploadButton;
+    Button profilePicSelelctButton, profilePicUploadButton;
     FarmarProfileCreationModel farmarProfileCreationModel;
     DatabaseReference databaseReference;
     ImageView imageView, profilePicUploadImageView;
@@ -61,24 +61,10 @@ public class FarmarProfileCreation extends AppCompatActivity {
         createUsernameEdit = findViewById(R.id.createUsernameEdit);
         createPasswordEdit = findViewById(R.id.createPasswordEdit);
 
+
         farmarProfileCreationModel = new FarmarProfileCreationModel();
         databaseReference = FirebaseDatabase.getInstance().getReference().child("FarmerProfiles");  // all these together to connect the database
         storageReference = FirebaseStorage.getInstance().getReference().child("Images");
-
-//        /// for bluer image
-//
-//        Bitmap bitmap1 = BitmapFactory.decodeResource(this.getResources(), R.drawable.logo);
-//        Rabbit.setContext(this)
-//                .setBitMap(bitmap1)
-//                .setScale(1.1f)
-//                .setRaius(24.0f)
-//                .setConstarst(0.0f)
-//                .setBrightnes(1.0f)
-//                .build();
-//
-//        Rabbit.getModifiedRabbitBitmap();
-//        imageView.setImageBitmap(Rabbit.getModifiedRabbitBitmap());
-//        ///
 
 
         profilePicSelelctButton.setOnClickListener(new View.OnClickListener() {
@@ -98,6 +84,9 @@ public class FarmarProfileCreation extends AppCompatActivity {
                 } else {
                     fileUploader();
                 }
+
+                Intent intentProductDetails = new Intent(FarmarProfileCreation.this, EnterProductDetails.class);
+                startActivity(intentProductDetails);
             }
         });
 
@@ -116,6 +105,7 @@ public class FarmarProfileCreation extends AppCompatActivity {
         imageId = System.currentTimeMillis() + "." + getExtension(imgUri);
         StorageReference reference = storageReference.child(imageId);
 
+//        String id = databaseReference.push().getKey();
 
         farmarProfileCreationModel.setFirstNameEdit(firstNameEdit.getText().toString().trim());
         farmarProfileCreationModel.setSecoundNameEdit(secoundNameEdit.getText().toString().trim());
@@ -125,7 +115,7 @@ public class FarmarProfileCreation extends AppCompatActivity {
         farmarProfileCreationModel.setCreatePasswordEdit(Integer.valueOf(createPasswordEdit.getText().toString().trim()));
         farmarProfileCreationModel.setImageId(imageId);
 
-        databaseReference.push().setValue(farmarProfileCreationModel);
+        databaseReference.child(emailEdit.getText().toString().trim()).setValue(farmarProfileCreationModel);
 
 
         uploadTask = reference.putFile(imgUri)

@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         imageview = findViewById(R.id.imageview);
         farmarButton = findViewById(R.id.farmarButton);
         customerButton = findViewById(R.id.customerButton);
-        changeLanguage =  findViewById(R.id.changeLanguage);
+        changeLanguage = findViewById(R.id.changeLanguage);
 
         /// for bluer image
 
@@ -74,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
                 showChangeLanguageDialog();
             }
         });
-
 
 
     }
@@ -128,8 +127,6 @@ public class MainActivity extends AppCompatActivity {
         String language2 = sharedPreferences.getString("my_language", "");
         setLocal(language2);
     }
-
-
 
 
     @Override

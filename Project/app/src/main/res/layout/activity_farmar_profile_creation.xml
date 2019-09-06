@@ -71,6 +71,7 @@
                     android:layout_width="122dp"
                     android:layout_height="40dp"
                     android:gravity="center"
+                    android:textColor="@color/colorBlack"
                     android:text="@string/first_name" />
 
                 <EditText
@@ -96,6 +97,7 @@
                     android:layout_width="122dp"
                     android:layout_height="40dp"
                     android:gravity="center"
+                    android:textColor="@color/colorBlack"
                     android:text="@string/secound_name" />
 
                 <EditText
@@ -122,6 +124,7 @@
                     android:layout_width="122dp"
                     android:layout_height="40dp"
                     android:gravity="center"
+                    android:textColor="@color/colorBlack"
                     android:text="@string/email" />
 
                 <EditText
@@ -149,6 +152,7 @@
                     android:layout_width="122dp"
                     android:layout_height="40dp"
                     android:gravity="center"
+                    android:textColor="@color/colorBlack"
                     android:text="@string/contact_number" />
 
                 <EditText
@@ -175,6 +179,7 @@
                     android:layout_width="122dp"
                     android:layout_height="40dp"
                     android:gravity="center"
+                    android:textColor="@color/colorBlack"
                     android:text="@string/createUsername" />
 
                 <EditText
@@ -200,6 +205,7 @@
                     android:layout_width="122dp"
                     android:layout_height="40dp"
                     android:gravity="center"
+                    android:textColor="@color/colorBlack"
                     android:text="@string/createPassword" />
 
                 <EditText
