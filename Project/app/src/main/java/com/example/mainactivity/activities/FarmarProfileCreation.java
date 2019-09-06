@@ -24,8 +24,11 @@ import com.example.mainactivity.R;
 import com.example.mainactivity.modal.FarmarProfileCreationModel;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.StorageTask;
@@ -105,8 +108,6 @@ public class FarmarProfileCreation extends AppCompatActivity {
         imageId = System.currentTimeMillis() + "." + getExtension(imgUri);
         StorageReference reference = storageReference.child(imageId);
 
-//        String id = databaseReference.push().getKey();
-
         farmarProfileCreationModel.setFirstNameEdit(firstNameEdit.getText().toString().trim());
         farmarProfileCreationModel.setSecoundNameEdit(secoundNameEdit.getText().toString().trim());
         farmarProfileCreationModel.setEmailEdit(emailEdit.getText().toString().trim());
@@ -115,7 +116,7 @@ public class FarmarProfileCreation extends AppCompatActivity {
         farmarProfileCreationModel.setCreatePasswordEdit(Integer.valueOf(createPasswordEdit.getText().toString().trim()));
         farmarProfileCreationModel.setImageId(imageId);
 
-        databaseReference.child(emailEdit.getText().toString().trim()).setValue(farmarProfileCreationModel);
+        databaseReference.child(createUsernameEdit.getText().toString().trim()).setValue(farmarProfileCreationModel);
 
 
         uploadTask = reference.putFile(imgUri)

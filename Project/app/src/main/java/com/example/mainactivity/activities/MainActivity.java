@@ -141,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
                         MainActivity.super.onBackPressed();
                     }
                 })
-                .setNegativeButton("cancle", null).setCancelable(false); // setCancelable() use to not cancel the alert box when
+                .setNegativeButton("cancel", null).setCancelable(false); // setCancelable() use to not cancel the alert box when
         //clicked other areas
 
         AlertDialog alertDialog = builder.create();
