@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.mainactivity.FarmerProfileViewAndUpdate;
 import com.example.mainactivity.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -50,8 +51,14 @@ public class LoginAndSignIn extends AppCompatActivity {
                             String password = dataSnapshot.child("createPasswordEdit").getValue().toString();
 
                             if (password.equals(passwordEdit.getText().toString())) {
+
+                                String username = dataSnapshot.child("createUsernameEdit").getValue().toString();
+
                                 Intent logInIntent = new Intent(LoginAndSignIn.this, EnterProductDetails.class);
+                                logInIntent.putExtra("usernamepass", username);
+                                logInIntent.putExtra("passwordpass", password);
                                 startActivity(logInIntent);
+
 
                             }
 

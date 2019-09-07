@@ -48,6 +48,8 @@ dependencies {
     //gif
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.17'
 
+    implementation 'com.android.support:design:28.0.0'
+
 
 }
 

@@ -79,6 +79,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:gravity="center"
+                    android:textColor="@color/colorBlack"
                     android:background="@drawable/background_color"
                     android:hint="@string/enter_first_name" />
             </LinearLayout>
@@ -234,11 +235,11 @@
                     android:text="@string/profilePicupload" />
 
                 <!--<Button-->
-                    <!--android:id="@+id/saveFarmarProfileCreation"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text="@string/submit_button"-->
-                    <!--android:background="@drawable/background_color"/>-->
+                <!--android:id="@+id/saveFarmarProfileCreation"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/submit_button"-->
+                <!--android:background="@drawable/background_color"/>-->
 
             </LinearLayout>
 

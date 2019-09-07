@@ -51,4 +51,6 @@
     <string name="enter_weeding_type" translatable="false">Enter Weeding Type</string>
 
 
+    <string name="open" translatable="false">Open</string>
+    <string name="close" translatable="false">Close</string>
 </resources>

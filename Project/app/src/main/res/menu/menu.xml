@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-<item
-    android:title="Settings"
-    android:id="@+id/settings" />
+    <item
+        android:id="@+id/myProfile"
+        android:title="My Profile" />
 
-<item
-    android:title="Contact Us"
-    android:id="@+id/contactUs"/>
-
-<item
-    android:title="About Us"
-    android:id="@+id/aboutUs"/>
+    <item
+        android:id="@+id/aboutUs"
+        android:title="About Us" />
 
 
 </menu>

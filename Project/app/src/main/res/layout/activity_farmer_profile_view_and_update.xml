@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plantone"
+    tools:context=".FarmerProfileViewAndUpdate">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageViewProfileCreation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/plantone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/profilePicUploadImageView"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/userimg" />
+
+                <!--<Button-->
+                <!--android:id="@+id/profilePicSelelctButton"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_marginTop="125dp"-->
+                <!--android:layout_marginLeft="180dp"-->
+                <!--android:background="@drawable/background_color"-->
+                <!--android:text="@string/profilePicSelelct" />-->
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <!--first name-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/background_color"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/firstNamedb"
+                    android:layout_width="122dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="@string/first_name"
+                    android:textColor="@color/colorBlack" />
+
+            </LinearLayout>
+
+            <!--secound name-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/background_color"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/secoundNamedb"
+                    android:layout_width="122dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="@string/secound_name"
+                    android:textColor="@color/colorBlack" />
+
+            </LinearLayout>
+
+            <!--email-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/background_color"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/emaildb"
+                    android:layout_width="122dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="@string/email"
+                    android:textColor="@color/colorBlack" />
+
+            </LinearLayout>
+
+            <!--contact numbers-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/background_color"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/contactNumberdb"
+                    android:layout_width="122dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="@string/contact_number"
+                    android:textColor="@color/colorBlack" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/profilePicUploadButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_color"
+                    android:text="@string/profilePicupload" />
+
+                <!--<Button-->
+                <!--android:id="@+id/saveFarmarProfileCreation"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/submit_button"-->
+                <!--android:background="@drawable/background_color"/>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>
