@@ -1,13 +1,14 @@
-package com.example.mainactivity.activities;
+package com.example.mainactivity;
 
 import android.content.ContentResolver;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.View;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
@@ -15,7 +16,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.example.mainactivity.R;
+import com.example.mainactivity.activities.EnterProductDetails;
 import com.example.mainactivity.modal.FarmarProfileCreationModel;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -24,26 +25,34 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FileDownloadTask;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.StorageTask;
 import com.google.firebase.storage.UploadTask;
 
-public class FarmarProfileCreation extends AppCompatActivity {
+import java.io.File;
+import java.io.IOException;
+
+public class FarmerProfileView extends AppCompatActivity {
 
     EditText firstNameEdit, secoundNameEdit, emailEdit, contactNumberEdit, createUsernameEdit, createPasswordEdit;
     Button profilePicSelelctButton, profilePicUploadButton;
-    FarmarProfileCreationModel farmarProfileCreationModel;
     DatabaseReference databaseReference;
     ImageView imageView, profilePicUploadImageView;
     StorageReference storageReference;
+    FirebaseStorage firebaseStorage;
     Uri imgUri;
     private StorageTask uploadTask;
+    FarmarProfileCreationModel farmarProfileCreationModel;
+    String userNameEdit;
+    String passEdit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_farmar_profile_creation);
+//        setContentView(R.layout.activity_farmer_profile_view);
+        setContentView(R.layout.activity_farmar_profile_view_and_update);
 
         imageView = findViewById(R.id.imageViewProfileCreation);
         profilePicSelelctButton = findViewById(R.id.profilePicSelelctButton);
@@ -56,8 +65,59 @@ public class FarmarProfileCreation extends AppCompatActivity {
         createUsernameEdit = findViewById(R.id.createUsernameEdit);
         createPasswordEdit = findViewById(R.id.createPasswordEdit);
 
+        Intent myprof = getIntent();
+        userNameEdit = myprof.getStringExtra("user");
+        passEdit = myprof.getStringExtra("pass");
 
-        farmarProfileCreationModel = new FarmarProfileCreationModel();
+        DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
+        DatabaseReference userNameRef = rootRef.child("FarmerProfiles").child(userNameEdit);
+        firebaseStorage = FirebaseStorage.getInstance();
+        storageReference = firebaseStorage.getReferenceFromUrl("gs://project-ded5a.appspot.com").child("Images");
+
+        userNameRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                String fname = dataSnapshot.child("firstNameEdit").getValue().toString();
+                String sname = dataSnapshot.child("secoundNameEdit").getValue().toString();
+                String email = dataSnapshot.child("emailEdit").getValue().toString();
+                String contact = dataSnapshot.child("contactNumberEdit").getValue().toString();
+                final String image = dataSnapshot.child("imageId").getValue().toString();
+
+                firstNameEdit.setText(fname);
+                secoundNameEdit.setText(sname);
+                emailEdit.setText(email);
+                contactNumberEdit.setText(contact);
+                createUsernameEdit.setText(userNameEdit);
+                createPasswordEdit.setText(passEdit);
+
+                try {
+                    final File file = File.createTempFile("image", "jpg");
+                    storageReference.getFile(file).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+                        @Override
+                        public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+                            Bitmap bitmap = BitmapFactory.decodeFile(file.getAbsolutePath());
+                            profilePicUploadImageView.setImageBitmap(bitmap);
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(FarmerProfileView.this, "Image falier", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
+//        farmarProfileCreationModel = new FarmarProfileCreationModel();
         databaseReference = FirebaseDatabase.getInstance().getReference().child("FarmerProfiles");  // all these together to connect the database
         storageReference = FirebaseStorage.getInstance().getReference().child("Images");
 
@@ -75,13 +135,13 @@ public class FarmarProfileCreation extends AppCompatActivity {
             public void onClick(View v) {
 
                 if (uploadTask != null && uploadTask.isInProgress()) {   // remove multiple uploading save image when clicking button several times
-                    Toast.makeText(FarmarProfileCreation.this, "Upload in Progress", Toast.LENGTH_LONG).show();
+                    Toast.makeText(FarmerProfileView.this, "Upload in Progress", Toast.LENGTH_LONG).show();
                 } else {
                     fileUploader();
                 }
 
-//                Intent intentProductDetails = new Intent(FarmarProfileCreation.this, EnterProductDetails.class);
-//                startActivity(intentProductDetails);
+                Intent intentProductDetails = new Intent(FarmerProfileView.this, EnterProductDetails.class);
+                startActivity(intentProductDetails);
             }
         });
 
@@ -96,7 +156,7 @@ public class FarmarProfileCreation extends AppCompatActivity {
 
     private void fileUploader() {
 
-        final String imageId;
+        String imageId;
         imageId = System.currentTimeMillis() + "." + getExtension(imgUri);
         StorageReference reference = storageReference.child(imageId);
 
@@ -109,41 +169,20 @@ public class FarmarProfileCreation extends AppCompatActivity {
 //        }
 
 //        ---------------------------------------------------------------------------------------------------
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("FarmerProfiles");  // all these together to connect the database
+        storageReference = FirebaseStorage.getInstance().getReference().child("Images");
 
+        farmarProfileCreationModel = new FarmarProfileCreationModel();
 
-        DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
-        DatabaseReference userNameRef = rootRef.child("FarmerProfiles").child(createUsernameEdit.getText().toString());
+        farmarProfileCreationModel.setFirstNameEdit(firstNameEdit.getText().toString().trim());
+        farmarProfileCreationModel.setSecoundNameEdit(secoundNameEdit.getText().toString().trim());
+        farmarProfileCreationModel.setEmailEdit(emailEdit.getText().toString().trim());
+        farmarProfileCreationModel.setContactNumberEdit(Integer.valueOf(contactNumberEdit.getText().toString().trim()));
+        farmarProfileCreationModel.setCreateUsernameEdit(createUsernameEdit.getText().toString().trim());
+        farmarProfileCreationModel.setCreatePasswordEdit(Integer.valueOf(createPasswordEdit.getText().toString().trim()));
+        farmarProfileCreationModel.setImageId(imageId);
 
-        ValueEventListener valueEventListener = new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {  //dataSnapshot get the all data from userNameRef
-
-                if (dataSnapshot.exists()) {
-                    Toast.makeText(FarmarProfileCreation.this, "Username is Alredi Exist", Toast.LENGTH_LONG).show();
-                } else {
-                    farmarProfileCreationModel.setFirstNameEdit(firstNameEdit.getText().toString().trim());
-                    farmarProfileCreationModel.setSecoundNameEdit(secoundNameEdit.getText().toString().trim());
-                    farmarProfileCreationModel.setEmailEdit(emailEdit.getText().toString().trim());
-                    farmarProfileCreationModel.setContactNumberEdit(Integer.valueOf(contactNumberEdit.getText().toString().trim()));
-                    farmarProfileCreationModel.setCreateUsernameEdit(createUsernameEdit.getText().toString().trim());
-                    farmarProfileCreationModel.setCreatePasswordEdit(Integer.valueOf(createPasswordEdit.getText().toString().trim()));
-                    farmarProfileCreationModel.setImageId(imageId);
-
-                    databaseReference.child(createUsernameEdit.getText().toString().trim()).setValue(farmarProfileCreationModel);
-                    Toast.makeText(FarmarProfileCreation.this, "Profile Created Successfully", Toast.LENGTH_LONG).show();
-                    Intent intentProductDetails = new Intent(FarmarProfileCreation.this, EnterProductDetails.class);
-                    startActivity(intentProductDetails);
-                }
-
-
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        };
-        userNameRef.addListenerForSingleValueEvent(valueEventListener);
+        databaseReference.child(userNameEdit).setValue(farmarProfileCreationModel);
 
 
         uploadTask = reference.putFile(imgUri)

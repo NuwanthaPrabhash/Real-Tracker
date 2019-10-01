@@ -21,7 +21,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.example.mainactivity.FarmerProfileViewAndUpdate;
+import com.example.mainactivity.FarmerProfileView;
 import com.example.mainactivity.R;
 import com.google.zxing.WriterException;
 
@@ -37,7 +37,6 @@ public class EnterProductDetails extends AppCompatActivity implements Navigation
     EditText edtValue;
     ImageView qrImage;
     Button start, save;
-    String inputValue, temperature, humidity, name, fertilizer, farmName, transportMedia, weedingType;
     String savePath = Environment.getExternalStorageDirectory().getPath() + "/QRCode/";
     Bitmap bitmap;
     QRGEncoder qrgEncoder;
@@ -77,7 +76,7 @@ public class EnterProductDetails extends AppCompatActivity implements Navigation
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String arr[] = new String[7];
+                String[] arr = new String[7];
                 arr[0] = productNameEdit.getText().toString().trim();
                 arr[1] = temperatureEdit.getText().toString().trim();
                 arr[2] = humidityEdit.getText().toString().trim();
@@ -121,8 +120,6 @@ public class EnterProductDetails extends AppCompatActivity implements Navigation
                 String result;
                 try {
 
-//                    save = QRGSaver.save(savePath, edtValue.getText().toString().trim(), bitmap, QRGContents.ImageType.IMAGE_JPEG);
-                    //                    save = QRGSaver.save(savePath, edtValue.getText().toString().trim(), bitmap, QRGContents.ImageType.IMAGE_JPEG);
                     save = QRGSaver.save(savePath, val, bitmap, QRGContents.ImageType.IMAGE_JPEG);
                     result = save ? "Image Saved" : "Image Not Saved";
                     Toast.makeText(getApplicationContext(), result, Toast.LENGTH_LONG).show();
@@ -144,7 +141,7 @@ public class EnterProductDetails extends AppCompatActivity implements Navigation
 
         switch (menuItem.getItemId()) {
             case R.id.myProfile:
-                Intent myprof = new Intent(EnterProductDetails.this, FarmerProfileViewAndUpdate.class);
+                Intent myprof = new Intent(EnterProductDetails.this, FarmerProfileView.class);
                 myprof.putExtra("user", userNameEdit);
                 myprof.putExtra("pass", passEdit);
                 startActivity(myprof);
@@ -162,9 +159,9 @@ public class EnterProductDetails extends AppCompatActivity implements Navigation
         drawerLayout.closeDrawer(GravityCompat.START);
     }
 
-    private void openDrawer() {
-        drawerLayout.openDrawer(GravityCompat.START);
-    }
+//    private void openDrawer() {
+//        drawerLayout.openDrawer(GravityCompat.START);
+//    }
 
     @Override
     public void onBackPressed() {

@@ -14,8 +14,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.AboutUs"></activity>
-        <activity android:name=".FarmerProfileViewAndUpdate" />
+        <activity android:name=".activities.UpdateProfile"></activity>
+        <activity android:name=".activities.AboutUs" />
+        <activity android:name=".FarmerProfileView" />
         <activity android:name=".activities.QrCodeScannerActivity" />
         <activity android:name=".activities.EnterProductDetails" />
         <activity android:name=".activities.LoginAndSignIn" />
