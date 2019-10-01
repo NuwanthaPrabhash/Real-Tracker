@@ -21,7 +21,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.example.mainactivity.FarmerProfileView;
 import com.example.mainactivity.R;
 import com.google.zxing.WriterException;
 

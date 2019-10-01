@@ -1,4 +1,4 @@
-package com.example.mainactivity;
+package com.example.mainactivity.activities;
 
 import android.content.ContentResolver;
 import android.content.Intent;
@@ -16,7 +16,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.example.mainactivity.activities.EnterProductDetails;
+import com.example.mainactivity.R;
 import com.example.mainactivity.modal.FarmarProfileCreationModel;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
