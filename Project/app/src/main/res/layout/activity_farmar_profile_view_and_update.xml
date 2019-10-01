@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.UpdateProfile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageViewProfileCreation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/plantone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/profilePicUploadImageView"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/userimg"/>
+
+                <Button
+                    android:id="@+id/profilePicSelelctButton"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="125dp"
+                    android:layout_marginLeft="180dp"
+                    android:background="@drawable/background_color"
+                    android:text="@string/profilePicSelelct" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+
+            <!--first name-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:background="@drawable/background_color"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/firstNameLable"
+                    android:layout_width="122dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/first_name" />
+
+                <EditText
+                    android:id="@+id/firstNameEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:background="@drawable/background_color"
+                    android:hint="@string/enter_first_name" />
+            </LinearLayout>
+
+            <!--secound name-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:background="@drawable/background_color"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/secoundNameLable"
+                    android:layout_width="122dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/secound_name" />
+
+                <EditText
+                    android:id="@+id/secoundNameEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:background="@drawable/background_color"
+                    android:hint="@string/enter_second_name" />
+            </LinearLayout>
+
+            <!--email-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:background="@drawable/background_color"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/emailLable"
+                    android:layout_width="122dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/email" />
+
+                <EditText
+                    android:id="@+id/emailEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="@string/enter_email_address"
+                    android:gravity="center"
+                    android:background="@drawable/background_color"
+                    android:inputType="textEmailAddress" />
+            </LinearLayout>
+
+            <!--contact numbers-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:background="@drawable/background_color"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/contactNumberLable"
+                    android:layout_width="122dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/contact_number" />
+
+                <EditText
+                    android:id="@+id/contactNumberEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="@string/enter_contact_number"
+                    android:gravity="center"
+                    android:background="@drawable/background_color"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <!--create username-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:background="@drawable/background_color"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/createUsernameLable"
+                    android:layout_width="122dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/createUsername" />
+
+                <EditText
+                    android:id="@+id/createUsernameEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:background="@drawable/background_color"
+                    android:hint="@string/enter_username" />
+            </LinearLayout>
+
+            <!--create password-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:background="@drawable/background_color"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/createPasswordLable"
+                    android:layout_width="122dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/createPassword" />
+
+                <EditText
+                    android:id="@+id/createPasswordEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="@string/enter_password"
+                    android:gravity="center"
+                    android:background="@drawable/background_color"
+                    android:inputType="numberPassword" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/profilePicUploadButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_color"
+                    android:text="@string/profilePicupload" />
+
+                <!--<Button-->
+                <!--android:id="@+id/saveFarmarProfileCreation"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/submit_button"-->
+                <!--android:background="@drawable/background_color"/>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
