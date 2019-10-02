@@ -100,17 +100,6 @@ public class FarmarProfileCreation extends AppCompatActivity {
         imageId = System.currentTimeMillis() + "." + getExtension(imgUri);
         StorageReference reference = storageReference.child(imageId);
 
-//        -------------------------------------------------------------------------------------------------
-
-//        if (TextUtils.isEmpty(firstNameEdit.getText())){
-//            firstNameEdit.setError("First Name is Required!");
-//        }
-//        else {
-//        }
-
-//        ---------------------------------------------------------------------------------------------------
-
-
         DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
         DatabaseReference userNameRef = rootRef.child("FarmerProfiles").child(createUsernameEdit.getText().toString());
 
@@ -121,18 +110,53 @@ public class FarmarProfileCreation extends AppCompatActivity {
                 if (dataSnapshot.exists()) {
                     Toast.makeText(FarmarProfileCreation.this, "Username is Alredi Exist", Toast.LENGTH_LONG).show();
                 } else {
-                    farmarProfileCreationModel.setFirstNameEdit(firstNameEdit.getText().toString().trim());
-                    farmarProfileCreationModel.setSecoundNameEdit(secoundNameEdit.getText().toString().trim());
-                    farmarProfileCreationModel.setEmailEdit(emailEdit.getText().toString().trim());
-                    farmarProfileCreationModel.setContactNumberEdit(Integer.valueOf(contactNumberEdit.getText().toString().trim()));
-                    farmarProfileCreationModel.setCreateUsernameEdit(createUsernameEdit.getText().toString().trim());
-                    farmarProfileCreationModel.setCreatePasswordEdit(Integer.valueOf(createPasswordEdit.getText().toString().trim()));
+
+                    if (TextUtils.isEmpty(firstNameEdit.getText())) {
+                        firstNameEdit.setError("First Name is Required!");
+                    } else {
+                        farmarProfileCreationModel.setFirstNameEdit(firstNameEdit.getText().toString().trim());
+                    }
+                    if (TextUtils.isEmpty(secoundNameEdit.getText())) {
+                        secoundNameEdit.setError("Second Name is Required!");
+                    } else {
+                        farmarProfileCreationModel.setSecoundNameEdit(secoundNameEdit.getText().toString().trim());
+                    }
+                    if (TextUtils.isEmpty(emailEdit.getText())) {
+                        emailEdit.setError("Email is Required!");
+                    } else {
+                        farmarProfileCreationModel.setEmailEdit(emailEdit.getText().toString().trim());
+                    }
+                    if (TextUtils.isEmpty(contactNumberEdit.getText())) {
+                        contactNumberEdit.setError("Contact Number is Required!");
+                    } else {
+                        farmarProfileCreationModel.setContactNumberEdit(Integer.valueOf(contactNumberEdit.getText().toString().trim()));
+                    }
+                    if (TextUtils.isEmpty(createUsernameEdit.getText())) {
+                        createUsernameEdit.setError("Username is Required!");
+                    } else {
+                        farmarProfileCreationModel.setCreateUsernameEdit(createUsernameEdit.getText().toString().trim());
+                    }
+                    if (TextUtils.isEmpty(createPasswordEdit.getText())) {
+                        createPasswordEdit.setError("Password is Required!");
+                    } else {
+                        farmarProfileCreationModel.setCreatePasswordEdit(Integer.valueOf(createPasswordEdit.getText().toString().trim()));
+                    }
+
                     farmarProfileCreationModel.setImageId(imageId);
 
-                    databaseReference.child(createUsernameEdit.getText().toString().trim()).setValue(farmarProfileCreationModel);
-                    Toast.makeText(FarmarProfileCreation.this, "Profile Created Successfully", Toast.LENGTH_LONG).show();
-                    Intent intentProductDetails = new Intent(FarmarProfileCreation.this, EnterProductDetails.class);
-                    startActivity(intentProductDetails);
+                    if (!firstNameEdit.getText().toString().trim().isEmpty() && !secoundNameEdit.getText().toString().trim().isEmpty() && !emailEdit.getText().toString().trim().isEmpty() && !contactNumberEdit.getText().toString().trim().isEmpty() && !createUsernameEdit.getText().toString().trim().isEmpty() && !createPasswordEdit.getText().toString().trim().isEmpty() && profilePicUploadImageView.getDrawable() != null) {
+                        databaseReference.child(createUsernameEdit.getText().toString().trim()).setValue(farmarProfileCreationModel);
+                        Toast.makeText(FarmarProfileCreation.this, "Profile Created Successfully", Toast.LENGTH_LONG).show();
+                        Intent intentProductDetails = new Intent(FarmarProfileCreation.this, EnterProductDetails.class);
+                        startActivity(intentProductDetails);
+                    } else {
+                        if(profilePicUploadImageView.getDrawable() == null){
+                            Toast.makeText(FarmarProfileCreation.this, "Enter Profile Picture", Toast.LENGTH_LONG).show();
+                        }
+                        Toast.makeText(FarmarProfileCreation.this, "Enter Your Details", Toast.LENGTH_LONG).show();
+                    }
+
+
                 }
 
 
