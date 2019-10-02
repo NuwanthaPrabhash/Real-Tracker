@@ -80,8 +80,6 @@ public class FarmarProfileCreation extends AppCompatActivity {
                     fileUploader();
                 }
 
-//                Intent intentProductDetails = new Intent(FarmarProfileCreation.this, EnterProductDetails.class);
-//                startActivity(intentProductDetails);
             }
         });
 
@@ -95,6 +93,9 @@ public class FarmarProfileCreation extends AppCompatActivity {
     }
 
     private void fileUploader() {
+        if (profilePicUploadImageView.getDrawable() != null) {
+
+
 
         final String imageId;
         imageId = System.currentTimeMillis() + "." + getExtension(imgUri);
@@ -150,15 +151,13 @@ public class FarmarProfileCreation extends AppCompatActivity {
                         Intent intentProductDetails = new Intent(FarmarProfileCreation.this, EnterProductDetails.class);
                         startActivity(intentProductDetails);
                     } else {
-                        if(profilePicUploadImageView.getDrawable() == null){
+                        if (profilePicUploadImageView.getDrawable() == null) {
                             Toast.makeText(FarmarProfileCreation.this, "Enter Profile Picture", Toast.LENGTH_LONG).show();
                         }
                         Toast.makeText(FarmarProfileCreation.this, "Enter Your Details", Toast.LENGTH_LONG).show();
                     }
 
-
                 }
-
 
             }
 
@@ -185,6 +184,7 @@ public class FarmarProfileCreation extends AppCompatActivity {
                         // ...
                     }
                 });
+    }
     }
 
     public void fileChooser() {

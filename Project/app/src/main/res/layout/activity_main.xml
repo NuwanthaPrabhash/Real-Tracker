@@ -16,12 +16,6 @@
             android:background="@drawable/scan"
             android:scaleType="centerCrop"/>
 
-
-        <!--<pl.droidsonroids.gif.GifImageView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:src="@drawable/gifimage"-->
-            <!--/>-->
         <RelativeLayout
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
